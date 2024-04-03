@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Fondo.jpg');
+    background-size: cover;
+}
+
+.contenedor {
+    width: 300px;
+    margin: 100px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.titulo h2 {
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    margin-top: 20px;
+}
+
+.campo {
+    margin-bottom: 10px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.campo input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 0;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.opciones {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.recordar-contrasena {
+    display: flex;
+    align-items: center;
+}
+
+.recordar-contrasena input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.olvidar-contrasena {
+    text-align: right;
+}
+
+.olvidar-contrasena a {
+    text-decoration: none; /* Eliminar el subrayado */
+    color: white;
+}

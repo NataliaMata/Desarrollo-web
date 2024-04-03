@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Promedio de Calificaciones</title>
+    <link rel="stylesheet" href="calificaciones.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Calculadora de Promedio de Calificaciones</h1>
+        <form id="formulario">
+            <div class="campo">
+                <label for="matricula">Matrícula:</label>
+                <input type="text" id="matricula" name="matricula" required>
+            </div>
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="campo">
+                <label for="ingles">Inglés:</label>
+                <input type="number" id="ingles" name="ingles" min="0" max="100" required>
+            </div>
+            <div class="campo">
+                <label for="matematicas">Matemáticas:</label>
+                <input type="number" id="matematicas" name="matematicas" min="0" max="100" required>
+            </div>
+            <div class="campo">
+                <label for="espanol">Español:</label>
+                <input type="number" id="espanol" name="espanol" min="0" max="100" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="calificaciones.js"></script>
+</body>
+</html>

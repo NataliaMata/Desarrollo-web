@@ -1,0 +1,100 @@
+body {
+    font-family: "Comic Sans MS", cursive;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.titulo-rectangulo {
+    background-color: yellow;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.titulo-rectangulo h1 {
+    font-size: 36px;
+    margin: 0;
+    color: black;
+}
+
+.cuerpo {
+    padding: 20px;
+}
+
+.acercade, .favoritos {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.favoritos {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: disc; /* Viñetas */
+    padding: 0;
+}
+
+.cuadro-blanco {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 100px green; /* Intensidad del brillo verde */
+}
+
+.cuadro-blanco h2 {
+    color: black;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.form input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: yellow;
+    text-align: center;
+    padding: 2px;
+    height: 50px;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+footer .copyright {
+    color: white; /* Color de letras blancas */
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px; /* Rectángulo sea igualmente redondeado */
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior */
+    width: auto; /* Ancho al contenido */
+}
