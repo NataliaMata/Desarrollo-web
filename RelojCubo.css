@@ -1,0 +1,52 @@
+body {
+    background: pink;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    perspective: 800px;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+}
+  
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+  
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+}
+
+.front { transform: translateZ(100px); }
+.back { transform: rotateY(180deg) translateZ(100px); }
+.right { transform: rotateY(90deg) translateZ(100px); }
+.left { transform: rotateY(-90deg) translateZ(100px); }
+.top { transform: rotateX(90deg) translateZ(100px); }
+.bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
