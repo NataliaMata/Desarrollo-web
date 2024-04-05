@@ -1,0 +1,25 @@
+body 
+{
+	background: pink;
+}
+
+.reloj-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reloj-analogico {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.reloj-digital {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 2em;
+    color: palevioletred;
+    background-color: pink;
+    padding: 10px;
+    border-radius: 5px;
+}
