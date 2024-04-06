@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro para la Conferencia Anual de Desarrollo Web</title>
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conferencia Anual de Desarrollo Web</h1>
+        <p class="subtitle">Fecha: 30 de Octubre del 2024</p>
+        <p class="subtitle">Lugar: Centro de convenciones Web</p>
+        <p>¡Regístrate para poder obtener un lugar!</p>
+        <img src="Ticket.jpg" alt="Imagen" class="centered-image">
+        <p></p>
+        <button id="showFormBtn">Registrarse</button>
+        <form id="registrationForm" class="hidden">
+            <label for="fullName">Nombre Completo:</label>
+            <input type="text" id="fullName" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" required>
+            <label for="phone">Número de Teléfono:</label>
+            <input type="tel" id="phone" required>
+            <label for="ticketType">Tipo de Entrada:</label>
+            <select id="ticketType" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="General">General</option>
+                <option value="VIP">VIP</option>
+                <option value="Platinum">Platinum</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="purchaseDetails" class="hidden">
+            <h2>Detalles de la compra</h2>
+            <p id="fullNameDisplay"></p>
+            <p id="emailDisplay"></p>
+            <p id="phoneDisplay"></p>
+            <p id="ticketTypeDisplay"></p>
+            <p>¡Gracias por tu compra! Te hemos enviado un correo de confirmación, favor de revisarlo.</p>
+        </div>
+    </div>
+
+    <script src="Formulario.js"></script>
+</body>
+</html>
